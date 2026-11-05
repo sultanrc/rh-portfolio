@@ -1,13 +1,30 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function Background() {
   return (
-    <section className="mx-auto grid max-w-4xl grid-cols-1 gap-6 px-10 md:px-6 py-16 md:grid-cols-4 md:gap-16 md:py-24">
-      <div className="col-span-1">
+    <section className="mx-auto grid max-w-4xl grid-cols-1 gap-6 px-10 py-16 md:grid-cols-4 md:gap-16 md:px-6 md:py-24">
+      {/* Heading */}
+      <motion.div
+        className="col-span-1"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <h2 className="text-md text-left font-bold tracking-widest text-blue-500 md:text-right">
           BACKGROUND
         </h2>
-      </div>
+      </motion.div>
 
-      <div className="col-span-1 md:col-span-3">
+      {/* Description */}
+      <motion.div
+        className="col-span-1 md:col-span-3"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <p className="text-sm font-regular leading-relaxed text-gray-600">
           Civil engineer with{" "}
           <strong className="font-semibold text-gray-900">
@@ -33,7 +50,7 @@ export default function Background() {
           and Associate Expert in Construction K3. Skilled in aligning
           engineering documents with actual site conditions.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }

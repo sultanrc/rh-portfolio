@@ -1,17 +1,31 @@
+"use client";
+import { motion } from "framer-motion";
 import { experiences } from "../data/experience";
 
 export default function Experience() {
   return (
     <section className="mx-auto grid max-w-4xl grid-cols-1 gap-8 px-10 md:px-6 py-12 md:grid-cols-4 md:gap-16 md:py-20">
       {/* Section title */}
-      <div className="col-span-1">
+      <motion.div
+        className="col-span-1"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <h2 className="text-left text-md font-bold tracking-widest text-blue-500 md:text-right">
           EXPERIENCE
         </h2>
-      </div>
+      </motion.div>
 
       {/* Experience content */}
-      <div className="col-span-1 flex flex-col gap-8 md:col-span-3 ">
+      <motion.div
+        className="col-span-1 flex flex-col gap-8 md:col-span-3 "
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         {experiences.map((experience) => (
           <div key={`${experience.company}-${experience.period}`}>
             <div className="flex flex-col gap-1 md:flex-row md:justify-between md:gap-4">
@@ -32,7 +46,7 @@ export default function Experience() {
           CV/Resume
           <span aria-hidden="true">🗒️</span>
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }
