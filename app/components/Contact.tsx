@@ -16,7 +16,7 @@ const headline: Variants = {
 
 const word: Variants = {
   hidden: { y: "110%" },
-  show: { y: 0, transition: { duration: 0.9, ease } },
+  show: { y: 0, transition: { duration: 0.9, delay: 0.6, ease } },
 };
 
 const fadeUp: Variants = {
@@ -25,7 +25,7 @@ const fadeUp: Variants = {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 0.9, ease },
+    transition: { duration: 0.9, delay: 0.6, ease },
   },
 };
 

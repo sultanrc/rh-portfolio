@@ -10,7 +10,7 @@ export default function Background() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
       >
         <h2 className="text-md text-left font-bold tracking-widest text-blue-500 md:text-right">
           BACKGROUND
@@ -23,7 +23,7 @@ export default function Background() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
       >
         <p className="text-sm font-regular leading-relaxed text-gray-600">
           Civil engineer with{" "}

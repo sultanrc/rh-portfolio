@@ -13,13 +13,13 @@ const imageWrap: Variants = {
   hidden: { clipPath: "inset(0 0 100% 0)" },
   show: {
     clipPath: "inset(0 0 0% 0)",
-    transition: { duration: 1.1, ease },
+    transition: { duration: 1.1, delay: 0.6, ease },
   },
 };
 
 const image: Variants = {
   hidden: { scale: 1.25 },
-  show: { scale: 1, transition: { duration: 1.4, ease } },
+  show: { scale: 1, transition: { duration: 1.4, delay: 0.6, ease } },
 };
 
 const fadeUp: Variants = {
@@ -28,7 +28,7 @@ const fadeUp: Variants = {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 0.8, ease },
+    transition: { duration: 0.8, delay: 0.6, ease },
   },
 };
 
@@ -41,7 +41,7 @@ export default function Projects() {
           initial={{ opacity: 0, x: -16 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease }}
+          transition={{ duration: 0.8, delay: 0.6, ease }}
           className="text-left text-md font-bold tracking-widest text-blue-500 md:text-right"
         >
           PROJECTS

@@ -11,7 +11,7 @@ export default function Experience() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
       >
         <h2 className="text-left text-md font-bold tracking-widest text-blue-500 md:text-right">
           EXPERIENCE
@@ -24,7 +24,7 @@ export default function Experience() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
       >
         {experiences.map((experience) => (
           <div key={`${experience.company}-${experience.period}`}>

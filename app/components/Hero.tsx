@@ -87,21 +87,6 @@ export default function Hero() {
             </motion.span>
           ))}
 
-          {/* Caret */}
-          <motion.span
-            aria-hidden
-            className="ml-1 inline-block h-[0.9em] w-0.75 rounded-sm bg-current"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 1, 1, 0, 0, 1, 1, 0, 0, 1] }}
-            transition={{
-              delay: START_DELAY,
-              duration: 2,
-              times: [0, 0.05, 0.45, 0.5, 0.55, 0.6, 0.8, 0.85, 0.9, 1],
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
-
           {/* Emoji tangan */}
           <motion.span
             className="ml-2"

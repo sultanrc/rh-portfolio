@@ -11,7 +11,7 @@ export default function Skills() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
       >
         <h2 className="text-md text-left font-bold tracking-widest text-blue-500 md:text-right">
           SKILLS
@@ -23,7 +23,7 @@ export default function Skills() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
       >
         {skills.map((skill) => (
           <div key={skill.category} className="flex flex-col gap-1 w-60">
