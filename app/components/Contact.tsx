@@ -1,6 +1,6 @@
 "use client"; // hapus kalau bukan Next.js App Router
 
-import { motion, type Variants } from "framer-motion";
+import { motion, type Variants } from "motion/react";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -62,7 +62,7 @@ export default function Contact() {
 
       <motion.p
         variants={fadeUp}
-        className="mx-10 md:mx-20 text-center text-sm lg:text-md leading-relaxed text-gray-500"
+        className="mx-10 md:mx-20 text-center text-sm lg:text-md leading-relaxed text-gray-500 dark:text-gray-400"
       >
         Looking for someone with hands-on engineering experience and a
         commitment to quality? Let’s connect and explore what we can accomplish
@@ -75,7 +75,7 @@ export default function Contact() {
         variants={fadeUp}
         whileHover={{ y: -3 }}
         whileTap={{ scale: 0.97 }}
-        className="group mx-auto inline-flex items-center gap-2 rounded-lg border border-blue-600 bg-white px-6 py-3 text-sm font-mono font-semibold text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white"
+        className="group mx-auto inline-flex items-center gap-2 rounded-lg border border-blue-600 bg-white px-6 py-3 text-sm font-mono font-semibold text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white dark:border-blue-400 dark:bg-transparent dark:text-blue-400 dark:hover:bg-blue-500 dark:hover:text-white"
       >
         Get in Touch
         <span

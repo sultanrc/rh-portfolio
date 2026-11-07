@@ -25,26 +25,26 @@ export default function Background() {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        <p className="text-sm font-regular leading-relaxed text-gray-600">
+        <p className="text-sm font-regular leading-relaxed text-gray-600 dark:text-gray-100">
           Civil engineer with{" "}
-          <strong className="font-semibold text-gray-900">
+          <strong className="font-semibold dark:font-bold text-gray-900 dark:text-gray-100">
             3.5 years of experience
           </strong>{" "}
           in quantity take-off, shop/as-built drawings, and project
           documentation, progressing from supporting{" "}
-          <strong className="font-semibold text-gray-900">
+          <strong className="font-semibold dark:font-bold text-gray-900 dark:text-gray-100">
             10 parallel projects
           </strong>{" "}
           (up to IDR 6 billion) to a site engineering role on an{" "}
-          <strong className="font-semibold text-gray-900">
+          <strong className="font-semibold dark:font-bold text-gray-900 dark:text-gray-100">
             IDR 27 billion tank repair project
           </strong>{" "}
           at{" "}
-          <strong className="font-semibold text-gray-900">
+          <strong className="font-semibold dark:font-bold text-gray-900 dark:text-gray-100">
             Pertamina TBBM Plumpang
           </strong>
           .{" "}
-          <strong className="font-semibold text-gray-900">
+          <strong className="font-semibold dark:font-bold text-gray-900 dark:text-gray-100">
             BNSP-certified Building Construction Site Manager
           </strong>{" "}
           and Associate Expert in Construction K3. Skilled in aligning

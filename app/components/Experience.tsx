@@ -13,7 +13,7 @@ export default function Experience() {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        <h2 className="text-left text-md font-bold tracking-widest text-blue-500 md:text-right">
+        <h2 className="text-left text-md font-bold tracking-widest text-blue-500 dark:text-blue-400 md:text-right">
           EXPERIENCE
         </h2>
       </motion.div>
@@ -31,20 +31,23 @@ export default function Experience() {
             <div className="flex flex-col gap-1 md:flex-row md:justify-between md:gap-4">
               <h3 className="text-sm font-bold">{experience.company}</h3>
 
-              <p className="shrink-0 text-xs font-mono text-gray-600">
+              <p className="shrink-0 text-xs font-mono text-gray-600 dark:text-gray-400">
                 {experience.period}
               </p>
             </div>
 
-            <p className="text-sm text-gray-600">{experience.position}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              {experience.position}
+            </p>
           </div>
         ))}
         <a
           href="mailto:rezzahanafiah@gmail.com"
-          className="mr-auto mt-4 inline-flex items-center gap-2 rounded-lg border border-blue-600 bg-white px-6 py-3 text-sm font-mono font-semibold text-blue-600 transition-all duration-300 hover:bg-blue-600 hover:text-white"
+          className="mr-auto mt-4 inline-flex items-center gap-2 rounded-lg border border-blue-600 bg-white px-6 py-3 text-sm font-mono font-semibold text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white dark:border-blue-400 dark:bg-transparent dark:text-blue-400 dark:hover:bg-blue-500 dark:hover:text-white"
         >
           CV/Resume
           <span aria-hidden="true">🗒️</span>
+          <span aria-hidden="true">→</span>
         </a>
       </motion.div>
     </section>

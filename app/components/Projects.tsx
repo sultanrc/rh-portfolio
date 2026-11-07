@@ -42,7 +42,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6, ease }}
-          className="text-left text-md font-bold tracking-widest text-blue-500 md:text-right"
+          className="text-left text-md font-bold tracking-widest text-blue-500 dark:text-blue-400 md:text-right"
         >
           PROJECTS
         </motion.h2>
@@ -62,7 +62,7 @@ export default function Projects() {
             {/* Project image */}
             <motion.div
               variants={imageWrap}
-              className="aspect-video w-full shrink-0 overflow-hidden bg-sky-200 sm:aspect-square sm:w-40 md:aspect-auto md:h-80 md:w-100"
+              className="aspect-video w-full shrink-0 overflow-hidden bg-sky-200 dark:bg-gray-800 sm:aspect-square sm:w-40 md:aspect-auto md:h-80 md:w-100"
             >
               <motion.img
                 variants={image}
@@ -85,7 +85,7 @@ export default function Projects() {
 
                 <motion.p
                   variants={fadeUp}
-                  className="text-xs leading-relaxed text-gray-600"
+                  className="text-xs leading-relaxed text-gray-600 dark:text-gray-400"
                 >
                   {project.description}
                 </motion.p>
@@ -94,7 +94,7 @@ export default function Projects() {
               <motion.a
                 variants={fadeUp}
                 href="#"
-                className="group inline-flex w-fit items-center gap-2 rounded-md border border-blue-600 bg-white px-3 py-1 text-[10px] font-mono font-semibold text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white"
+                className="group inline-flex w-fit items-center gap-2 rounded-md border border-blue-600 bg-white px-3 py-1 text-[10px] font-mono font-semibold text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white dark:border-blue-400 dark:bg-transparent dark:text-blue-400 dark:hover:bg-blue-500 dark:hover:text-white"
               >
                 Details
                 <span

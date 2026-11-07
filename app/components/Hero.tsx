@@ -1,5 +1,6 @@
 "use client";
 import { motion, type Variants } from "motion/react";
+import DarkModeButton from "./DarkModeButton";
 
 const text = "Hello";
 const CHAR_DELAY = 0.12; // jeda antar huruf
@@ -65,9 +66,8 @@ export default function Hero() {
       id="about"
       className="mx-auto max-w-full pt-6 pb-32 px-10 md:pb-40 lg:px-20 lg:pb-60"
     >
-      <div className="flex justify-end">
-        {/* Dark mode button */}
-        dark mode button
+      <div className="mx-auto max-w-7xl flex justify-end">
+        <DarkModeButton />
       </div>
 
       <div className="mx-auto max-w-6xl flex flex-col gap-40 mt-20 sm:gap-12 md:mt-28 md:gap-16 lg:mt-32">
@@ -156,7 +156,7 @@ export default function Hero() {
       before:absolute before:bottom-0 before:left-0 before:h-0 before:w-full
       before:bg-blue-600 before:transition-all before:duration-300
       before:content-['']
-      hover:before:h-full hover:text-white"
+      hover:before:h-full hover:text-white dark:text-gray-100"
           >
             <span className="relative z-10">rezzahanafiah@gmail.com</span>
           </motion.a>

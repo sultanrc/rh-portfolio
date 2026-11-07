@@ -29,7 +29,10 @@ export default function Skills() {
           <div key={skill.category} className="flex flex-col gap-1 w-60">
             <h2 className="mb-1 text-md font-bold">{skill.category}</h2>
             {skill.items.map((item) => (
-              <span className="text-sm font-regular text-gray-600" key={item}>
+              <span
+                className="text-sm font-regular text-gray-600 dark:text-gray-200"
+                key={item}
+              >
                 {item}
               </span>
             ))}
